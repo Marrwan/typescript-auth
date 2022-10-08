@@ -4,6 +4,7 @@ import express from 'express';
 import config from 'config';
 import connectDB from '../utils/dbconnection';
 import log from '../utils/logger';
+import sendmail from '../utils/mailer';
 
 
 const app = express();
