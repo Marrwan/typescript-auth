@@ -13,7 +13,7 @@ export async function createUserHandler(req: Request<{}, {}, createUserInput >, 
             from: "Asake@sake.com",
             to: user.email, // list of receivers
             subject: "Hello 👻✔ verify your account", // Subject line
-            text: `Hello world? ${user.verificationToken}, Id: user.id`, , // plain text body
+            text: `Hello world? ${user.verificationToken}, Id: user.id`, // plain text body
 
         })
         return user

@@ -2,6 +2,7 @@ import { getModelForClass, prop, Severity, modelOptions, pre } from "@typegoose/
 import argon2 from "argon2";
 import { nanoid } from "nanoid";
 
+
 @pre<User>("save", async function(){
     if(!this.isModified("password")){
         return;
@@ -32,7 +33,7 @@ export class User{
     @prop({default: false})
     verified:boolean
 
-    @prop({required: true, default: ()=> nanoid()})
+    @prop({required: true, default : "Al987zdssry3wAR#24a46sy"})
     verificationToken:string
 
     @prop({required: true})

@@ -36,6 +36,6 @@ async function sendmail(payload: SendMailOptions){
     log.info("Message sent: %s", info.messageId);
     log.info("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   }
-};
+)};
 
 export default sendmail;
